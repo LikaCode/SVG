@@ -1,57 +1,101 @@
 <!DOCTYPE html>
 <!-- saved from url=(0038)file:///C:/Users/lika/Desktop/SVG.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
-    
-        <h1>Stadium</h1>
-    
-<svg height="1000" width="1000">
-  <ellipse cx="500" cy="400" rx="400" ry="200" style="fill:grey;stroke:black;stroke-width:2"></ellipse>
-  <ellipse cx="500" cy="400" rx="300" ry="150" style="fill:rgb(55,10,10);stroke:black;stroke-width:2"></ellipse>
-  <rect x="300" y="300" width="380" height="200" style="fill:rgb(0,77,0);stroke-width:3;stroke:rgb(10,77,10)"></rect>
-  <circle cx="490" cy="400" r="30" stroke="white" stroke-width="2" fill="rgb(0,77,0)"></circle>
-  <line x1="310" y1="310" x2="670" y2="310" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="310" y1="490" x2="670" y2="490" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="311" y1="310" x2="311" y2="490" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="669" y1="310" x2="669" y2="490" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="490" y1="310" x2="490" y2="490" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="310" y1="370" x2="330" y2="370" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="650" y1="370" x2="670" y2="370" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="310" y1="430" x2="330" y2="430" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="650" y1="430" x2="670" y2="430" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="330" y1="369" x2="330" y2="431" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="650" y1="369" x2="650" y2="431" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="310" y1="350" x2="360" y2="350" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="310" y1="450" x2="360" y2="450" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="620" y1="350" x2="670" y2="350" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="620" y1="450" x2="670" y2="450" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="360" y1="349" x2="360" y2="451" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <line x1="620" y1="349" x2="620" y2="451" style="stroke:rgb(255,255,255);stroke-width:2"></line>
-  <circle cx="345" cy="400" r="1" stroke="white" stroke-width="1" fill="white"></circle>
-  <circle cx="635" cy="400" r="1" stroke="white" stroke-width="1" fill="white"></circle>
-  <circle cx="490" cy="400" r="1" stroke="white" stroke-width="1" fill="white"></circle>
-  <circle cx="400" cy="380" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="420" cy="360" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="440" cy="380" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="500" cy="390" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="320" cy="410" r="3" stroke="white" stroke-width="1" fill="black"></circle>
-  <circle cx="530" cy="380" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="450" cy="420" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="410" cy="385" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="520" cy="450" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="420" cy="440" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="480" cy="360" r="3" stroke="white" stroke-width="1" fill="red"></circle>
-  <circle cx="430" cy="350" r="2" stroke="yellow" stroke-width="1" fill="yellow"></circle>
-  <circle cx="580" cy="440" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="570" cy="410" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="590" cy="360" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="590" cy="425" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="500" cy="350" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="520" cy="330" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="540" cy="335" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="470" cy="460" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="450" cy="340" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="500" cy="420" r="3" stroke="white" stroke-width="1" fill="blue"></circle>
-  <circle cx="660" cy="390" r="3" stroke="white" stroke-width="1" fill="purple"></circle>
-</svg>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<body>    
+    <h1>Stadium</h1>
+    <h1> Score <span id="res"></span> : 0</h1>
 
-</body></html>
+<script>
+var i = 0;
+function score(){
+  i = i + 1;
+  resEl = document.getElementById('res');
+  resEl.innerHTML = String(i);
+}
+</script>
+    
+<svg height="900" width="2000">
+  <ellipse id="c4" cx="750" cy="600" rx="600" ry="300" style="fill:grey;stroke:black;stroke-width:2"></ellipse>
+  <ellipse cx="750" cy="600" rx="450" ry="225" style="fill:rgb(55,10,10);stroke:black;stroke-width:2"></ellipse>
+  <rect x="450" y="450" width="570" height="300" style="fill:rgb(0,77,0);stroke-width:3;stroke:rgb(10,77,10)"></rect>
+  <circle cx="735" cy="600" r="45" stroke="white" stroke-width="2" fill="rgb(0,77,0)"></circle>
+  <line x1="465" y1="465" x2="1005" y2="465" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="465" y1="735" x2="1005" y2="735" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="466" y1="465" x2="466" y2="735" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="1004" y1="465" x2="1004" y2="735" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="735" y1="465" x2="735" y2="735" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="465" y1="555" x2="495" y2="555" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="975" y1="555" x2="1005" y2="555" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="465" y1="645" x2="495" y2="645" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="975" y1="645" x2="1005" y2="645" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="495" y1="554" x2="495" y2="646" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="975" y1="554" x2="975" y2="646" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="465" y1="525" x2="540" y2="525" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="465" y1="675" x2="540" y2="675" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="930" y1="525" x2="1005" y2="525" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="930" y1="675" x2="1005" y2="675" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="540" y1="524" x2="540" y2="676" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <line x1="930" y1="524" x2="930" y2="676" style="stroke:rgb(255,255,255);stroke-width:2"></line>
+  <circle cx="517" cy="600" r="2" stroke="white" stroke-width="1" fill="white"></circle>
+  <circle cx="952" cy="600" r="2" stroke="white" stroke-width="1" fill="white"></circle>
+  <circle cx="735" cy="600" r="2" stroke="white" stroke-width="1" fill="white"></circle>
+  <circle cx="670" cy="520" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle cx="600" cy="560" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle cx="700" cy="490" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle cx="770" cy="580" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle id="c2" cx="480" cy="580" r="6" stroke="white" stroke-width="1" fill="black"></circle>
+  <circle cx="890" cy="680" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle cx="910" cy="580" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle cx="870" cy="600" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle cx="590" cy="675" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle cx="910" cy="530" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle cx="570" cy="540" r="6" stroke="red" stroke-width="1" fill="red"></circle>
+  <circle id="c1" onclick="score()" cx="925" cy="580" r="5" stroke="yellow" stroke-width="1" fill="yellow"></circle>
+  <circle cx="870" cy="660" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="855" cy="615" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="935" cy="560" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="690" cy="555" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="750" cy="525" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="940" cy="685" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="870" cy="575" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="705" cy="690" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="940" cy="510" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle cx="750" cy="620" r="6" stroke="blue" stroke-width="1" fill="blue"></circle>
+  <circle id="c3" cx="990" cy="590" r="6" stroke="white" stroke-width="1" fill="purple"></circle>
+
+  <animate
+           xlink:href="#c1"
+           attributeName="cx"
+           values="925;1000"
+           begin="click"
+           dur="1s"
+           repeatCount="1"
+  />
+  <animate
+            xlink:href="#c2"
+            attributeName="cy"
+            values="580;610;580"
+            dur="2s"
+            repeatCount="indefinite"
+  />
+  <animate
+            xlink:href="#c3"
+            attributeName="cy"
+            values="590;620;590"
+            dur="1s"
+            repeatCount="indefinite"
+  />  
+  <animate
+            xlink:href="#c4"
+            attributeName="fill"
+            from="grey"
+            to="pink"
+            dur="2s"
+            repeatCount="indefinite"
+  />
+</svg>
+</body>
+</html>
